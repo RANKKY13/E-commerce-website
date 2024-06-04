@@ -70,3 +70,31 @@ col-2 h1{
 .header{
     background: radial-gradient(#fff,#e9b3d2);
 }
+/*---------------------Features products page------------*/
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: 1px solid #3be8ff;
+    padding: 5px;
+}
+select:focus{
+    outline: none;
+}
+.small-container{
+    flex-basis: 34%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+}
+.bi-star-fill{
+    color: rgb(240, 158, 52);
+}
+.col-4 img{
+    margin: 100%;
+}

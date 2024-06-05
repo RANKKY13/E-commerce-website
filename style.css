@@ -92,9 +92,13 @@ select:focus{
     cursor: pointer;
     display: flex;
 }
+.col-4 img, .rating {
+    float: left;
+    width: 200px;
+    padding: 20px;
+    margin-right: 2px;
+    
+}
 .bi-star-fill{
     color: rgb(240, 158, 52);
-}
-.col-4 img{
-    margin: 100%;
 }

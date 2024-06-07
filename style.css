@@ -130,3 +130,6 @@ display: inline-block;
 .footer{
     background: #58caec;
 }
+.footer-col-2 img{
+    display: inline-flexbox;
+}

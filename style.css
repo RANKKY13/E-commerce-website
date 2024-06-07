@@ -127,3 +127,6 @@ justify-content: space-between;
 .app-logo img{
 display: inline-block;
 }
+.footer{
+    background: #58caec;
+}

@@ -8,17 +8,33 @@
     align-items: center;
     padding: 20px;
 }
-nav{
+.navlinks{
     flex: 1;
     text-align: right;
 }
-nav ul{
+.navlinks ul li{
+    list-style: none;
     display: inline-block;
-    list-style-type: none;
+    padding: 8px 12px;
+    position: relative;
+    right: 0;
 }
-nav ul li{
-    display: inline-block;
-    margin-right: 20px;
+.navlinks ul li a{
+    color: #2cace7;
+    text-decoration: none;
+    font-size: 13px;
+}
+.navlinks ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(253, 253, 253);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navlinks ul li:hover::after{
+    width: 100%;
 }
 a{
     text-decoration: none;
@@ -82,7 +98,7 @@ select{
 select:focus{
     outline: none;
 }
-.small-container{
+.small-container-1{
     flex-basis: 34%;
     border-radius: 10px;
     margin-bottom: 5%;
@@ -108,7 +124,7 @@ margin: 100px auto 50px;
 justify-content: space-between;
 }
 .page-btn{
-    margin: 0 auto 80px;
+    margin: 10px;
 }
 .page-btn span{
     display: inline-block;
@@ -126,10 +142,82 @@ justify-content: space-between;
 }
 .app-logo img{
 display: inline-block;
+
 }
+.products img { 
+    display: inline-flex;
+}
+.btn-1{
+    padding: 5px 10px;
+    border: 3px solid#f1bfe9;
+    border-radius: 5px;
+    border-color: #fff;
+    background-color: #38e1e7;
+    color: #fffefe;
+}
+.btn-2{
+    padding: 5px 10px;
+    border: 3px solid#f1bfe9;
+    border-radius: 5px;
+    border-color: #fff;
+    background-color: #e7cd38;
+    color: #fffefe;
+    white-space: nowrap;
+}
+.btn-1, .btn-2{
+    display: inline-block;
+    margin-right: 10px;
+}
+.title h2{
+    color: #20b0e9;
+}
+/*-----------------------DAY 19 (FOOTER)----------*/
 .footer{
-    background: #58caec;
+    background: #f1bfe9;
+    position: relative;
+    padding: 50px;
 }
 .footer-col-2 img{
-    display: inline-flexbox;
+    position: absolute;
+    top: -30px;
+    left: 0;
+}
+.footer-col-3{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+.footer-col-4{
+    position: absolute;
+    top: 5px;
+    right: 200px;
+    padding: 10px;
+    cursor: pointer;
+}
+.footer-col-4 h3{
+    color:#20b0e9;
+}
+.footer-col-3 h3{
+    color: #20b0e9;
+}
+.footer-col-3, .footer-col-4 li{
+    color: #fff;
+}
+.footer-col-2 p{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    color: #20b0e9;
+}
+.copyright{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    padding-bottom: 0px;
 }

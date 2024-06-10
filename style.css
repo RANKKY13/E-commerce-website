@@ -1,12 +1,23 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-.navbar{
-    display: flex;
-    align-items: center;
-    padding: 20px;
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-image: url(images/bgb.png)
+}
+.header img{
+    width: 200px;
+}
+nav{
+display: flex;
+padding: 2% 6%;
+justify-content: space-between;
+align-items: center;
 }
 .navlinks{
     flex: 1;
@@ -17,10 +28,31 @@
     display: inline-block;
     padding: 8px 12px;
     position: relative;
-    right: 0;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn a{
+    color: #fff;
+}
+.hero-btn a:hover{
+    color: #405d4c;
+}
+.hero-btn:hover{
+    border: 1px solid #fff;
+    background: #6b8e4e;
+    transition: 1s;
+    color: #405d4c;
 }
 .navlinks ul li a{
-    color: #2cace7;
+    color: #fff;
     text-decoration: none;
     font-size: 13px;
 }
@@ -28,7 +60,7 @@
     content: '';
     width: 0%;
     height: 2px;
-    background: rgb(253, 253, 253);
+    background: white;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -36,188 +68,38 @@
 .navlinks ul li:hover::after{
     width: 100%;
 }
-a{
-    text-decoration: none;
-    color: #555;
+.text-box h3{
+    width: 90%;
+    color: #ffffff;
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 90px;
+    
 }
-p{
-    color: #555;
-}
-h1{
-    color: #3dbae0;
-}
-.container{
-    max-width: 1300px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-.row{
+.text-box p{
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    width: 10%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 20px;
+    white-space: nowrap;
+    color: #fbfcfa;
 }
 .col-2{
     flex-basis: 50%;
     min-width: 300px;
 }
-/*------------------DAY 14-------------------*/
 .col-2 img{
-    max-width: 100%;
-    margin: 10px;
-    margin-left: 40%;
-    padding: 10px 0;
-}
-col-2 h1{
-    font-size: 50px;
-    line-height: 60px;
-    margin: 25px 0;
-    color: #ffff;
-}
-.btn{
-    display: inline-block;
-    background-color: #20b0e9;
-    color: #ffff;
-    padding: 8px 30px;
-    margin: 30px 0;
-    border-radius: 30px;
-}
-.header{
-    background: radial-gradient(#fff,#e9b3d2);
-}
-/*---------------------Features products page------------*/
-.row-2{
-    justify-content: space-between;
-    margin: 100px auto 50px;
-}
-select{
-    border: 1px solid #3be8ff;
-    padding: 5px;
-}
-select:focus{
-    outline: none;
-}
-.small-container-1{
-    flex-basis: 34%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: left;
-    background: #fff3f3;
-    padding: 15px;
-    cursor: pointer;
-    display: flex;
-}
-.col-4 img, .rating {
-    float: left;
-    width: 200px;
-    padding: 20px;
-    margin-right: 2px;
+    width: 400px;
+    height: 400px;
+    margin: 200px;
+    margin-left: 60%;
+    padding: 10px;
     
-}
-.bi-star-fill{
-    color: rgb(240, 158, 52);
-}
-/*---------------------All Gadget------------------------------------*/
-.row-row-2 h4{
-margin: 100px auto 50px;
-justify-content: space-between;
-}
-.page-btn{
-    margin: 10px;
-}
-.page-btn span{
-    display: inline-block;
-    border: 1px solid #eba117;
-    margin-left: 10px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    cursor: pointer;
-}
-.page-btn span:hover{
-    background: #eba117;
-    color: #fff;
-}
-.app-logo img{
-display: inline-block;
-
-}
-.products img { 
-    display: inline-flex;
-}
-.btn-1{
-    padding: 5px 10px;
-    border: 3px solid#f1bfe9;
-    border-radius: 5px;
-    border-color: #fff;
-    background-color: #38e1e7;
-    color: #fffefe;
-}
-.btn-2{
-    padding: 5px 10px;
-    border: 3px solid#f1bfe9;
-    border-radius: 5px;
-    border-color: #fff;
-    background-color: #e7cd38;
-    color: #fffefe;
-    white-space: nowrap;
-}
-.btn-1, .btn-2{
-    display: inline-block;
-    margin-right: 10px;
-}
-.title h2{
-    color: #20b0e9;
-}
-/*-----------------------DAY 19 (FOOTER)----------*/
-.footer{
-    background: #f1bfe9;
-    position: relative;
-    padding: 50px;
-}
-.footer-col-2 img{
-    position: absolute;
-    top: -30px;
-    left: 0;
-}
-.footer-col-3{
-    position: absolute;
-    top: 5px;
-    right: 0;
-    padding: 10px;
-    cursor: pointer;
-}
-.footer-col-4{
-    position: absolute;
-    top: 5px;
-    right: 200px;
-    padding: 10px;
-    cursor: pointer;
-}
-.footer-col-4 h3{
-    color:#20b0e9;
-}
-.footer-col-3 h3{
-    color: #20b0e9;
-}
-.footer-col-3, .footer-col-4 li{
-    color: #fff;
-}
-.footer-col-2 p{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    text-align: center;
-    transform: translateX(-50%);
-    color: #20b0e9;
-}
-.copyright{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    text-align: center;
-    transform: translateX(-50%);
-    padding-bottom: 0px;
-}
+} 
